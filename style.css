@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+:root {
+  --ModerateViolet: hsl(263, 55%, 52%);
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(0, 0%, 81%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--LightGrayishBlue);
+  position: relative;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.aboutMe{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+.aboutMe img{
+    border-radius: 50%;
+}
+
+.grid-container{
+    max-width: 1224px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 24px;
+}
+h2{
+  margin: 24px 0px;
+}
+p{
+  color: var(--LightGray);
+  line-height: 1.5rem;
+}
+.darkGray{
+  color: var(--VeryDarkGrayishBlue);
+}
+.darkBlue{
+  color: var(--VeryDarkBlackishBlue);
+}
+
+.grid-cart-daniel{
+    background-color: var(--ModerateViolet);
+    border-radius: 10px;
+    padding: 33px;
+    color: #fff;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.grid-cart-jonathan{
+    background-color:var(--VeryDarkGrayishBlue) ;
+    border-radius: 10px;
+    padding: 33px;
+    color: #fff;
+    grid-column: 3/3;
+    grid-row: 1/2;
+    
+}
+
+.grid-cart-jeanette{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 33px;
+    grid-row: 2/3;
+}
+
+.grid-cart-patrik{
+    background-color: var(--VeryDarkBlackishBlue);
+    border-radius: 10px;
+    padding: 33px;
+    color: #fff;
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+
+.grid-cart-kira{
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 33px;
+    grid-column: 4/4;
+    grid-row: 1/3;
+    
+}
