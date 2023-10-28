@@ -40,7 +40,9 @@ body {
 .aboutMe img{
     border-radius: 50%;
 }
-
+.outline{
+  outline: 4px solid rgb(177, 63, 231);
+}
 .grid-container{
     max-width: 1224px;
     display: grid;
@@ -62,6 +64,10 @@ p{
 }
 
 .grid-cart-daniel{
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: 130px 130px;
+  background-position: 450px 5px;
     background-color: var(--ModerateViolet);
     border-radius: 10px;
     padding: 33px;
@@ -103,4 +109,12 @@ p{
     grid-column: 4/4;
     grid-row: 1/3;
     
+}
+@media (max-width:860px) {
+  .grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px;
+  }
 }
